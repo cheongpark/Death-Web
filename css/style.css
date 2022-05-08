@@ -1,0 +1,229 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter';
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+}
+
+header > h1 {
+    font-size: 64px;
+    text-align: center;
+    position: relative;
+    line-height: 150px;
+}
+
+#Y_Death_Chart {
+    margin: 10px 2.5%;
+    width: 95%;
+    height: 700px;
+}
+
+/* movelink */
+.movelink > ul {
+    display: flex;
+    list-style: none;
+}
+
+.movelink > ul > li > a {
+    border: 1px solid black;
+    margin-bottom: -1px;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 0px 50px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+}
+
+.movelink > ul > li > a:hover {
+    background-color: black;
+    color: white;
+}
+
+/* movelink */
+
+/* menu */
+nav {
+    width: 100%;
+    height: 80px;
+    background-color: #C4C4C4;
+}
+
+.menu > form {
+    display: flex;
+    justify-content: space-between;
+    padding: 12.5px 10px;
+    font-size: 40px;
+    height: 55px;
+}
+
+.citylist {
+    font-size: 25px;
+    border-radius: 5px;
+    margin: 0px 10px;
+    width: 100%;
+    background-color: #FFFFFF;
+    border: 1px solid black;
+    min-width: 100px;
+}
+
+.yearlist {
+    font-size: 25px;
+    border-radius: 5px;
+    margin: 0px 10px;
+    width: 250px;
+    background-color: #FFFFFF;
+    border: 1px solid black;
+    min-width: 100px;
+}
+
+.loadb {
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: white;
+    border: 1px solid black;
+    min-width: 70px;
+}
+
+/* menu */
+
+/* main */
+
+main {
+    display: flex;
+    width: 100%;
+}
+
+.mleft {
+    width: 40%;
+    height: 650px;
+    padding: 10px 25px;
+}
+
+.mright {
+    width: 60%;
+    padding: 10px 25px;
+}
+
+/* left */
+
+#chart1 {
+    background-color: #EBEBEB;
+    width: 100%;
+    min-width: 320px;
+    height: 350px;
+    overflow: auto;
+    border-radius: 3px;
+}
+
+.chart1list {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#chart1 > .chart1list > .list {
+    display: flex;
+    position: relative;
+    padding: 5px 5px;
+    width: 90%;
+    justify-content: space-between;
+}
+
+#chart1 > .chart1list > .list > h3 {
+    width: 40%;
+    font-size: 30px;
+    text-align: center;
+}
+
+#chart1 > .chart1list > .list > .numbox {
+    display: flex;
+    width: 50%;
+    height: 50px;
+    background-color: #C4C4C4;
+}
+
+#chart1 > .chart1list > .list > .numbox > .numwhitebox {
+    margin: 5px 5px; 
+    width: 80%;
+    text-align: right;
+    font-size: 30px;
+    background-color: white;
+    line-height: 40px;
+}
+
+#chart1 > .chart1list > .list > .numbox > h3 {
+    line-height: 50px;
+    position: relative;
+    font-size: 30px;
+}
+
+#chart2 {
+    margin: 10px 0px;
+    width: 100%;
+    min-width: 320px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+/* right */
+
+#chart3 {
+    background-color: #EBEBEB;
+    float: left;
+    width: 290px;
+    height: 290px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.chart3des {
+    font-size: 29px;
+}
+
+/* main */
+
+@media screen and (max-width: 1220px) {
+    main {
+        display: inline;
+    }
+
+    .mleft {
+        width: 90%;
+        padding: 10px 5%;
+    }
+
+    .mright {
+        width: 90%;
+        padding: 10px 5%;
+    }
+
+    .movelink > ul {
+        display: block;
+    }
+
+    .movelink > ul > li > a {
+        display: inline-block;
+        width: 100%;
+
+    }
+    
+    header > h1 {
+    	font-size: 30px;
+    }
+}
