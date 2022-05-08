@@ -130,8 +130,6 @@ main {
 
 .chart1list {
     position: relative;
-    top: 50%;
-    transform: translateY(-50%);
 }
 
 #chart1 > .chart1list > .list {
